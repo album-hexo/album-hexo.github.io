@@ -59,17 +59,17 @@
   
     const ldconfig = {
       light: {
-        smallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
-        largeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //浅色模式 大图链接 最终显示的图片
-        mobileSmallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
-        mobileLargeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端浅色大图链接 最终显示的图片
+        smallSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //浅色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //手机端浅色大图链接 最终显示的图片
         enableRoutes: ['/'],
         },
       dark: {
-        smallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //深色模式 小图链接 尽可能配置小于100k的图片 
-        largeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //深色模式 大图链接 最终显示的图片
-        mobileSmallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
-        mobileLargeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端深色大图链接 最终显示的图片
+        smallSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //深色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //深色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://blog.bornforthis.cn/img/students/02-friend.bloggersht.com.cn.jpg', //手机端深色大图链接 最终显示的图片
         enableRoutes: ['/'],
         },
       };
