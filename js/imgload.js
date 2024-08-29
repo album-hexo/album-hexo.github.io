@@ -59,17 +59,17 @@
   
     const ldconfig = {
       light: {
-        smallSrc: '/img/bg2_80kbver.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
-        largeSrc: '/img/bg2.jpg', //浅色模式 大图链接 最终显示的图片
-        mobileSmallSrc: '/img/bg2_80kbver.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
-        mobileLargeSrc: '/img/bg2.jpg', //手机端浅色大图链接 最终显示的图片
+        smallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //浅色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //浅色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端浅色大图链接 最终显示的图片
         enableRoutes: ['/'],
         },
       dark: {
-        smallSrc: '/img/bg1_80kbver.jpg', //深色模式 小图链接 尽可能配置小于100k的图片 
-        largeSrc: '/img/bg1.jpg', //深色模式 大图链接 最终显示的图片
-        mobileSmallSrc: '/img/bg1_80kbver.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
-        mobileLargeSrc: '/img/bg1.jpg', //手机端深色大图链接 最终显示的图片
+        smallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //深色模式 小图链接 尽可能配置小于100k的图片 
+        largeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //深色模式 大图链接 最终显示的图片
+        mobileSmallSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
+        mobileLargeSrc: 'https://cdn.imlazy.ink:233/img/background/119929533_p0.jpg', //手机端深色大图链接 最终显示的图片
         enableRoutes: ['/'],
         },
       };
@@ -97,7 +97,7 @@
   
     const observer = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
-        if (mutation.attributeName === "data-theme" &amp;&amp; location.pathname === '/') {
+        if (mutation.attributeName === "data-theme" && location.pathname === '/') {
           onThemeChange();
         }
       });
@@ -114,16 +114,17 @@
         container.remove();
       }
       const target = document.getElementById('page-header');
-      if (target &amp;&amp; target.classList.contains('full_page')) {
+      if (target && target.classList.contains('full_page')) {
         executeLoad(config, target);
       }
     }
   
     function onPJAXComplete(config) {
       const target = document.getElementById('page-header');
-      if (target &amp;&amp; target.classList.contains('full_page')) {
+      if (target && target.classList.contains('full_page')) {
         initProgressiveLoad(config);
       }
     }
   
   })();
+  
