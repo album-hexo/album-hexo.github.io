@@ -1799,7 +1799,7 @@ document.addEventListener("DOMContentLoaded", function () {
     anzhiyu.getCustomPlayList();
     anzhiyu.addEventListenerConsoleMusicList(false);
     anzhiyu.initPaginationObserver();
-
+    Bornforthis.setWelcome_info();
     setTimeout(() => {
       setInputFocusListener();
       if (typeof addFriendLinksInFooter === "function") {
