@@ -113,21 +113,21 @@ function fetchRandomPost() {
     } else if (randomPostTimes > 100) {
       randomPostLevel = "绝世渔夫";
     } else if (randomPostTimes > 75) {
-      randomPostLevel = "钓鱼王者";
+      randomPostLevel = "选妃王者";
     } else if (randomPostTimes > 50) {
-      randomPostLevel = "钓鱼宗师";
+      randomPostLevel = "选妃宗师";
     } else if (randomPostTimes > 20) {
-      randomPostLevel = "钓鱼专家";
+      randomPostLevel = "选妃专家";
     } else if (randomPostTimes > 5) {
-      randomPostLevel = "钓鱼高手";
+      randomPostLevel = "选妃高手";
     } else {
-      randomPostLevel = "钓鱼新手";
+      randomPostLevel = "选妃新手";
     }
     if (randomPostTimes >= 5) {
       document.getElementById("random-post").innerHTML =
-        `钓鱼中... （Lv.` + randomPostTimes + ` 当前称号：` + randomPostLevel + `）`;
+        `选妃中... （Lv.` + randomPostTimes + ` 当前称号：` + randomPostLevel + `）`;
     } else {
-      document.getElementById("random-post").innerHTML = `钓鱼中...`;
+      document.getElementById("random-post").innerHTML = `选妃中...`;
     }
 
     let randomTime = randomNum(1000, 3000);
@@ -147,7 +147,7 @@ function fetchRandomPost() {
       Math.round(Math.random()) == 0
     ) {
       document.getElementById("random-post").innerHTML =
-        "因为只钓鱼不吃鱼，过分饥饿导致本次钓鱼失败...(点击任意一篇钓鱼获得的文章即可恢复）";
+        "因为只选妃不吃鱼，过分饥饿导致本次选妃失败...(点击任意一篇选妃获得的文章即可恢复）";
       randomPostWorking = false;
     } else {
       var fetchUrl = fdata.apiurl + "randompost";
