@@ -1,0 +1,144 @@
+/* 背景与页面基本样式 */
+body[data-type="anniversary"] #web_bg {
+    background: var(--anzhiyu-background);
+}
+
+body[data-type="anniversary"] #page {
+    border: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: 0 0 !important;
+}
+
+body[data-type="anniversary"] #page .page-title {
+    display: none;
+}
+
+/* 卡片整体布局 */
+.anniversary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 响应式布局 */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 卡片样式 */
+.anniversary-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.anniversary-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片标题和图标水平对齐的样式 */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* 白色背景的中间部分 */
+.card-body {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #333;
+    text-align: center;
+}
+
+/* 剩余天数与"天后"的样式 */
+.countdown-wrapper {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem; /* 设置数字大小 */
+    color: #6b4226; /* 设置数字的颜色 */
+    font-weight: bold;
+}
+
+.days-label {
+    position: absolute;
+    top: -10px;
+    right: -45px;
+    background-color: #36c5b2;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    display: inline-block;
+}
+
+/* 虚线样式 */
+.dashed-line {
+    border-top: 1px dashed #ccc;
+    margin: 10px 0;
+}
+
+/* 目标日期与已经过去的天数信息 */
+.target-info, .total-days-info {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* 响应式布局优化，适配不同设备 */
+@media (max-width: 768px) {
+    .anniversary-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .anniversary-card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* 动画效果 */
+.anniversary-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.anniversary-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 版权信息的样式 */
+.card-copyright {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #777;
+    text-align: right;
+}
+
+.card-copyright a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-copyright a:hover {
+    text-decoration: underline;
+}
